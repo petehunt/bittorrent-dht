@@ -13,13 +13,16 @@
   },
   "dependencies": {
     "bencode": "^4.0.0",
+    "crc-32": "^1.2.2",
     "debug": "^4.3.4",
     "k-bucket": "^5.1.0",
     "k-rpc": "^5.1.0",
     "last-one-wins": "^1.0.4",
     "lru": "^3.1.0",
+    "magnet-uri": "^7.0.5",
     "randombytes": "^2.1.0",
-    "record-cache": "^1.2.0"
+    "record-cache": "^1.2.0",
+    "tsx": "^4.7.0"
   },
   "devDependencies": {
     "@webtorrent/semantic-release-config": "1.0.10",
