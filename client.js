@@ -68,6 +68,14 @@ function generateNodeId(addr) {
 }
 
 function isValidNodeId(id, addr) {
+  if (
+    addr.startsWith("10.") ||
+    addr.startsWith("192.168.") ||
+    addr.startsWith("127.") ||
+    addr.startsWith("169.254.")
+  ) {
+    return true;
+  }
   const r = id[id.length - 1] & 0x7;
   const prefix = calculateIdPrefix(addr, r);
 
